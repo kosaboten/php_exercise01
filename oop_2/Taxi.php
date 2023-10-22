@@ -7,19 +7,27 @@ class Taxi extends Car
 
     public function pickUp($num)
     {
-        $this->passenger ++;
+        $this->passenger += $num;
         return "{$num}人乗車しました" . PHP_EOL;
     }
 
     public function lower($num)
     {
         if ($this->passenger - $num >= 0) {
-            $this->passenger --;
+            $this->passenger -= $num;
             $str_num = strval($num);
             return "{$str_num}人降車しました" . PHP_EOL;
         } else {
             $str_num = strval($num);
             return "{$str_num}人は降車できません" . PHP_EOL;
         }
+    }
+
+    public function information()
+    {
+        return "車の車種:{$this->getName()}" . PHP_EOL
+            . "車体番号:{$this->getNumber()}" . PHP_EOL
+            . "カラー:{$this->getColor()}" . PHP_EOL
+            . "乗車人数:{$this->passenger}" . PHP_EOL;
     }
 }
