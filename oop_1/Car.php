@@ -13,13 +13,6 @@ class Car
         $this->color = $color;
     }
 
-    public function information()
-    {
-        return "車の車種:{$this->name}" . PHP_EOL
-            . "車体番号:{$this->number}" . PHP_EOL
-            . "カラー:{$this->color}" . PHP_EOL;
-    }
-
     public function getName()
     {
         return $this->name;
@@ -48,5 +41,12 @@ class Car
     public function setColor($color)
     {
         $this->color = $color;
+    }
+
+    public function information()
+    {
+        return "車の車種:{$this->name}" . PHP_EOL
+            . "車体番号:{$this->number}" . PHP_EOL
+            . "カラー:{$this->color}" . PHP_EOL;
     }
 }
