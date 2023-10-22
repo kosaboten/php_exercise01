@@ -15,11 +15,10 @@ class Taxi extends Car
     {
         if ($this->passenger - $num >= 0) {
             $this->passenger -= $num;
-            $str_num = strval($num);
-            return "{$str_num}人降車しました" . PHP_EOL;
+            return strval($num) . "人降車しました" . PHP_EOL;
         } else {
             $str_num = strval($num);
-            return "{$str_num}人は降車できません" . PHP_EOL;
+            return strval($num) . "人は降車できません" . PHP_EOL;
         }
     }
 
