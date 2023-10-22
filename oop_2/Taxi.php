@@ -28,6 +28,6 @@ class Taxi extends Car
         return "車の車種:{$this->getName()}" . PHP_EOL
             . "車体番号:{$this->getNumber()}" . PHP_EOL
             . "カラー:{$this->getColor()}" . PHP_EOL
-            . "乗車人数:{$this->passenger}" . PHP_EOL;
+            . "乗車人数:{$this->passenger}人" . PHP_EOL;
     }
 }
