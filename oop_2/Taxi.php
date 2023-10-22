@@ -8,7 +8,7 @@ class Taxi extends Car
     public function pickUp($num)
     {
         $this->passenger += $num;
-        return "{$num}人乗車しました" . PHP_EOL;
+        return strval($num) . "人乗車しました" . PHP_EOL;
     }
 
     public function lower($num)
