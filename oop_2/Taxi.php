@@ -17,7 +17,6 @@ class Taxi extends Car
             $this->passenger -= $num;
             return strval($num) . "人降車しました" . PHP_EOL;
         } else {
-            $str_num = strval($num);
             return strval($num) . "人は降車できません" . PHP_EOL;
         }
     }
